@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Minh Quang - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="topbar">
+        <div class="header-container">
+            <h1 class="logo">Võ Minh Quang <span class="logo-accent">- Web Developer</span></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="#services" class="nav-link">Dịch vụ</a></li>
+                    <li><a href="#projects" class="nav-link">Dự án</a></li>
+                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section-card hero-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">|</span>
+                    Giới thiệu bản thân
+                </h2>
+            </div>
+            <p class="section-content">
+                Xin chào! Tôi là một <strong>Lập trình viên Front-End</strong> đam mê tạo ra các trải nghiệm web mượt mà, chuẩn SEO và dễ tiếp cận cho người dùng. 
+                Với kinh nghiệm trong HTML5, CSS3 và JavaScript, tôi cam kết mang lại những giải pháp web chuyên nghiệp và hiệu quả.
+            </p>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section-card services-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">|</span>
+                    Dịch vụ của tôi
+                </h2>
+            </div>
+
+            <div class="services-container">
+                <article class="service-box">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🎨</div>
+                    </div>
+                    <h3>Thiết kế Web</h3>
+                    <p>Xây dựng giao diện UI/UX trực quan, hiện đại và tối ưu trải nghiệm người dùng.</p>
+                    <div class="service-hover-effect"></div>
+                </article>
+
+                <article class="service-box">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">⚙️</div>
+                    </div>
+                    <h3>Lập trình Front-End</h3>
+                    <p>Hiện thực hóa giao diện bằng HTML5, CSS3 và JavaScript mượt mà.</p>
+                    <div class="service-hover-effect"></div>
+                </article>
+
+                <article class="service-box">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">📱</div>
+                    </div>
+                    <h3>Tối ưu Responsive</h3>
+                    <p>Đảm bảo hiển thị hoàn hảo trên mọi thiết bị từ máy tính đến điện thoại.</p>
+                    <div class="service-hover-effect"></div>
+                </article>
+
+                <article class="service-box">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🔍</div>
+                    </div>
+                    <h3>Tối ưu SEO</h3>
+                    <p>Sử dụng Semantic HTML giúp trang web dễ dàng thăng hạng trên công cụ tìm kiếm.</p>
+                    <div class="service-hover-effect"></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section-card projects-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">|</span>
+                    Dự án nổi bật
+                </h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge badge-featured">Featured</div>
+                    </div>
+                    <h3>Trang web E-commerce</h3>
+                    <p>Một trang web bán hàng trực tuyến xây dựng bằng HTML5, CSS3 và JavaScript thuần. Giao diện hiện đại với các tính năng tương tác.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <button class="btn-detail" onclick="openModal('project1')">Xem chi tiết</button>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge badge-recent">Recent</div>
+                    </div>
+                    <h3>Ứng dụng Quản lý Tác vụ</h3>
+                    <p>Ứng dụng To-Do List hỗ trợ lưu trữ dữ liệu local storage và giao diện Responsive. Trải nghiệm người dùng mượt mà và trực quan.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Local Storage</span>
+                    </div>
+                    <button class="btn-detail" onclick="openModal('project2')">Xem chi tiết</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- LOADING SPINNERS DEMO SECTION -->
+        <section id="loading-demo" class="section-card loading-showcase">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">|</span>
+                    Micro-Interactions: Loading Spinners
+                </h2>
+            </div>
+            <p class="section-content">
+                Các kiểu loading indicator được thiết kế với CSS animations pure, tạo cảm giác chuyên nghiệp và hiện đại cho các trạng thái chờ.
+            </p>
+
+            <div class="spinners-grid">
+                <!-- Spinner 1: Classic -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-classic"></div>
+                    </div>
+                    <p class="spinner-name">Classic Spinner</p>
+                    <small>Vòng tròn xoay đơn giản</small>
+                </div>
+
+                <!-- Spinner 2: Dual Ring -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-dual">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <p class="spinner-name">Dual Ring</p>
+                    <small>Hai vòng xoay ngược chiều</small>
+                </div>
+
+                <!-- Spinner 3: Pulse Ring -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-pulse"></div>
+                    </div>
+                    <p class="spinner-name">Pulse Ring</p>
+                    <small>Vòng tròn phát sáng</small>
+                </div>
+
+                <!-- Spinner 4: Gradient -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-gradient"></div>
+                    </div>
+                    <p class="spinner-name">Gradient Spinner</p>
+                    <small>Gradient xoay liên tục</small>
+                </div>
+
+                <!-- Spinner 5: Dots Loader -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="spinner-name">Dots Loader</p>
+                    <small>Ba chấm nhảy lên xuống</small>
+                </div>
+
+                <!-- Spinner 6: Wave Loader -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-wave">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="spinner-name">Wave Loader</p>
+                    <small>Thanh chuyển động sóng</small>
+                </div>
+
+                <!-- Spinner 7: Orbit -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-orbit">
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="spinner-name">Orbit Spinner</p>
+                    <small>Hành tinh quay quanh tâm</small>
+                </div>
+
+                <!-- Spinner 8: Text Loader -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-text">Loading</div>
+                    </div>
+                    <p class="spinner-name">Text Loader</p>
+                    <small>Chữ với chấm nhảy</small>
+                </div>
+
+                <!-- Spinner 9: Shimmer -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-shimmer"></div>
+                    </div>
+                    <p class="spinner-name">Shimmer Loader</p>
+                    <small>Gradient chuyển động</small>
+                </div>
+
+                <!-- Spinner 10: Circular Progress -->
+                <div class="spinner-demo">
+                    <div class="spinner-display">
+                        <div class="spinner-circular"></div>
+                    </div>
+                    <p class="spinner-name">Circular Progress</p>
+                    <small>Vòng tròn tiến trình</small>
+                </div>
+            </div>
+
+            <!-- Loading States Examples -->
+            <div class="loading-states-section">
+                <h3 class="subsection-title">Ví dụ sử dụng Loading UI trong các trường hợp</h3>
+
+                <div class="states-grid">
+                    <!-- Full Page Loading -->
+                    <div class="state-example">
+                        <div class="state-preview">
+                            <div class="loading-overlay-demo">
+                                <div class="loading-container">
+                                    <div class="spinner-classic"></div>
+                                    <p class="loading-text">Đang tải trang...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="state-label">Full Page Loading</p>
+                    </div>
+
+                    <!-- Button Loading -->
+                    <div class="state-example">
+                        <div class="state-preview">
+                            <button class="btn-detail btn-loading-demo" onclick="toggleButtonLoad(this)">
+                                <span class="btn-spinner"></span>
+                                <span>Đang tải...</span>
+                            </button>
+                        </div>
+                        <p class="state-label">Button Loading</p>
+                    </div>
+
+                    <!-- Inline Loading -->
+                    <div class="state-example">
+                        <div class="state-preview">
+                            <div class="loading-inline-demo">
+                                <div class="spinner-classic small"></div>
+                                <span>Đang cập nhật...</span>
+                            </div>
+                        </div>
+                        <p class="state-label">Inline Loading</p>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="state-example">
+                        <div class="state-preview">
+                            <div class="loading-bar-demo"></div>
+                        </div>
+                        <p class="state-label">Progress Bar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section-card skills-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">|</span>
+                    Kỹ năng chuyên môn
+                </h2>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-name">HTML5 / CSS3 / JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">Semantic HTML & SEO Basics</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">Git & GitHub</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%;"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">UI/UX Design & Micro-interactions</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-card contact-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">|</span>
+                    Liên hệ với tôi
+                </h2>
+            </div>
+
+            <p class="contact-intro">Bạn có dự án hay câu hỏi? Hãy liên hệ với tôi ngay!</p>
+
+            <div class="contact-buttons">
+                <button class="btn-contact btn-contact-primary" onclick="alert('Email: quang@example.com')">
+                    ✉️ Gửi Email
+                </button>
+                <button class="btn-contact btn-contact-secondary" onclick="alert('GitHub Profile')">
+                    🔗 GitHub
+                </button>
+                <button class="btn-contact btn-contact-secondary" onclick="alert('LinkedIn Profile')">
+                    💼 LinkedIn
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL POPUP -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+
+            <div class="modal-header">
+                <span class="badge-tag" id="modalTag">PROJECT DETAIL</span>
+                <h1 class="modal-main-title" id="modalTitle">Chi tiết Dự án</h1>
+            </div>
+
+            <div class="modal-content-grid">
+                <div class="modal-card modal-card-primary">
+                    <h3 id="leftCardTitle">Mô tả Dự án</h3>
+                    <p id="leftCardDesc">Đây là mô tả chi tiết về dự án...</p>
+                </div>
+
+                <div class="modal-card modal-card-secondary">
+                    <h3>Công nghệ sử dụng</h3>
+                    <ul id="rightCardList">
+                        <li>HTML5 & Semantic Structure</li>
+                        <li>CSS3 với Flexbox & Grid</li>
+                        <li>Vanilla JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-modal-action" onclick="alert('Xem dự án live!')">Xem Live Demo</button>
+                <button class="btn-modal-secondary" onclick="closeModal()">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Võ Minh Quang - Web Developer. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+        function openModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const modalTag = document.getElementById('modalTag');
+            const modalTitle = document.getElementById('modalTitle');
+            const leftCardTitle = document.getElementById('leftCardTitle');
+            const leftCardDesc = document.getElementById('leftCardDesc');
+
+            if (projectId === 'project1') {
+                modalTag.textContent = 'E-COMMERCE PROJECT';
+                modalTitle.textContent = 'Trang web E-commerce';
+                leftCardTitle.textContent = 'Về Dự án này';
+                leftCardDesc.textContent = 'Một trang web bán hàng trực tuyến hoàn chỉnh với giao diện hiện đại, hỗ trợ lọc sản phẩm, giỏ hàng và thanh toán. Tôi đã sử dụng HTML5 để xây dựng cấu trúc semantic, CSS3 để tạo giao diện đẹp mắt, và JavaScript để xử lý các tương tác người dùng.';
+            } else if (projectId === 'project2') {
+                modalTag.textContent = 'TODO APP PROJECT';
+                modalTitle.textContent = 'Ứng dụng Quản lý Tác vụ';
+                leftCardTitle.textContent = 'Về Dự án này';
+                leftCardDesc.textContent = 'Ứng dụng To-Do List với các tính năng thêm, sửa, xóa tác vụ và lưu trữ dữ liệu bằng Local Storage. Giao diện responsive hoạt động tốt trên mọi thiết bị. Người dùng có thể đánh dấu tác vụ hoàn thành và quản lý danh sách công việc một cách hiệu quả.';
+            }
+
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.remove('active');
+        }
+
+        document.getElementById('projectModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        function toggleButtonLoad(btn) {
+            btn.classList.toggle('loading');
+            if (btn.classList.contains('loading')) {
+                setTimeout(() => {
+                    btn.classList.remove('loading');
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html>
